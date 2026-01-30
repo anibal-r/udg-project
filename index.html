@@ -19,19 +19,57 @@
   </head>
 
   <body>
+    <!-- Anfangstext -->
     <div id="container">
-    <div id="cover-art">
-        <h1>Anibal's <br>To <br>Do Site</h1>
+        <div id="cover-art">
+            <h1>Anibal's <br>To <br>Do Site</h1>
+        </div>
+        <p id="separator-text">Scroll Down to see more!</p>
+        <span id="separator"><hr></span><hr>
     </div>
-    <span id="separator"><hr></span>
+
+    <!-- eigentliche ToDo Funktionen -->
+    <div id="container">
+        <div id="layout-todo">
+
+            <div id="first-row">
+                <table id="task-table">
+                    <thead>
+                        <tr>
+                            <th>TODOS</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div id="second-row">
+                <label>Please enter your next task!</label><br/>
+                <input
+                type="text"
+                name="task"
+                id="user-task"
+                />
+                <input
+                lang="en"
+                type="submit"
+                name="submitTask"
+                id="user-submit-task"
+                />
+            </div>
+
+            <div id="third-row">
+                <p>right side bar</p>
+            </div>
+        </div>
     </div>
+
     <div id="container">
         <!-- IDEE für footer von COPILOT -->
-<footer>
-    <h2>Erstellt für die UDG in der Bewerbungsphase by A. Rodriguez</h2>
-    <img src="">
-    <i class="fa-brands fa-github fa-bounce"></i>
-</footer>
+        <footer>
+            <h2>Erstellt für die UDG in der Bewerbungsphase von A. Rodriguez</h2>
+            <a target="_blank" href="https://github.com/anibal-r"><img id="github-icon" src=".//assets/images/githubicon.webp" alt="github icon"></a>
+        </footer>
   </div>
 </body>
 </html>

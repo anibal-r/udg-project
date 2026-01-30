@@ -1,9 +1,16 @@
 body{
     background: #280905;
+    margin: 0;
+    font-family: "Gravitas One", sans-serif;
 }
 h1{
     margin: 80px 0px 0px 0px;
 }
+h2{
+    display: inline-block;
+    font-size: 1rem;
+}
+
 #cover-art{
     font-size: 7rem;
     margin-block-start: 0em;
@@ -16,13 +23,58 @@ h1{
 }
 #container{
     display: flex;
-    flex-direction: column;
-
+    flex-direction: column;;
+    margin: 0 3rem 1rem 3rem;
 }
+
+/* CSS für MAIN Funktionen */
+#container > #layout-todo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*main function stlye*/
+#first-row{
+    color: #F5E7C6;
+    min-width: 10rem;
+    background-color: blue;
+}
+#task-table{
+    text-align: center;
+}
+
+#second-row{
+    flex-grow: 1;
+    text-align: center;
+    color: #F5E7C6;
+    font-size: 3rem;
+    height: 75vh;
+    align-content: center;
+}
+#second-row > #user-task{
+    width: 10rem;
+}
+#third-row{
+    color: #F5E7C6;
+    min-width: 10rem;
+}
+
 #separator{
     color: #C3110C;
     border-style: solid;
     border-width: 0px 0px 35px 0px;
+}
+#separator-text{
+    font-size: 2rem;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-family: "Gravitas One", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #F5E7C6;
+    text-align: center;
 }
 hr{
     /* display: none; */
@@ -31,4 +83,14 @@ hr{
 footer{
     color: #F5E7C6;
     text-align: right;
+    margin: 0px;
+}
+#github-icon{
+    float: right;
+    width: 50px;
+    margin: 10px 0px 0px 20px;
+}
+/* optionale Optimierung für kleinere Bildschirme */
+@media(max-width: 600px){
+
 }
